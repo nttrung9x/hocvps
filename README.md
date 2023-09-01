@@ -2,6 +2,11 @@
 
 ## Nhận code tools / software / app / web
 
+[CaptCha69.Com](https://captcha69.com/)
+[Blog - MMO69.COM](https://mmo69.com/)
+[Zalo / Phone: 0372.972.971](tel:0372972971)
+Skype: nttrung9x
+
 ## Giới thiệu HocVPS
 
 **HocVPS Script** là 1 bash script chạy trên SSH sẽ tự động cài đặt tất cả các thành phần cần thiết nhất cho VPS với một dòng lệnh duy nhất.
