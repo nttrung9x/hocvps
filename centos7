@@ -173,13 +173,13 @@ yum-config-manager --enable remi
 if [ "$php_version" = "8.2" ]; then
     yum-config-manager --enable remi-php82
     yum -y install nginx php-fpm php-common php-gd php-mysqlnd php-pdo php-xml php-mbstring php-mcrypt php-curl php-opcache php-cli php-pecl-zip
-if [ "$php_version" = "8.1" ]; then
+elif [ "$php_version" = "8.1" ]; then
     yum-config-manager --enable remi-php81
     yum -y install nginx php-fpm php-common php-gd php-mysqlnd php-pdo php-xml php-mbstring php-mcrypt php-curl php-opcache php-cli php-pecl-zip
-if [ "$php_version" = "8.0" ]; then
+elif [ "$php_version" = "8.0" ]; then
     yum-config-manager --enable remi-php80
     yum -y install nginx php-fpm php-common php-gd php-mysqlnd php-pdo php-xml php-mbstring php-mcrypt php-curl php-opcache php-cli php-pecl-zip
-if [ "$php_version" = "7.4" ]; then
+elif [ "$php_version" = "7.4" ]; then
     yum-config-manager --enable remi-php74
     yum -y install nginx php-fpm php-common php-gd php-mysqlnd php-pdo php-xml php-mbstring php-mcrypt php-curl php-opcache php-cli php-pecl-zip
 elif [ "$php_version" = "7.3" ]; then
