@@ -68,7 +68,7 @@ if [ -d "$ACTION_FOLDER" ]; then
 else
     mkdir -p $ACTION_FOLDER
     cd $ACTION_FOLDER
-    git clone https://github.com/nguyentranchung/hocvps.git .
+    git clone https://github.com/nttrung9x/hocvps.git .
 fi
 
 if [ -f /etc/hocvps/scripts.conf ]; then
