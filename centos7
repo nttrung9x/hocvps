@@ -62,27 +62,39 @@ select opt in "${options[@]}"; do
 
     case "$REPLY" in
     1)
-        php_version="7.4"
+        php_version="5.6"
         break
         ;;
     2)
-        php_version="7.3"
-        break
-        ;;
-    3)
-        php_version="7.2"
-        break
-        ;;
-    4)
-        php_version="7.1"
-        break
-        ;;
-    5)
         php_version="7.0"
         break
         ;;
+    3)
+        php_version="7.1"
+        break
+        ;;
+    4)
+        php_version="7.2"
+        break
+        ;;
+    5)
+        php_version="7.3"
+        break
+        ;;
     6)
-        php_version="5.6"
+        php_version="7.4"
+        break
+        ;;
+	7)
+        php_version="8.0"
+        break
+        ;;
+	8)
+        php_version="8.1"
+        break
+        ;;
+	9)
+        php_version="8.2"
         break
         ;;
     $((${#options[@]} + 1)))
@@ -158,6 +170,15 @@ sleep 3
 # Enable Remi Repo
 yum-config-manager --enable remi
 
+if [ "$php_version" = "8.2" ]; then
+    yum-config-manager --enable remi-php82
+    yum -y install nginx php-fpm php-common php-gd php-mysqlnd php-pdo php-xml php-mbstring php-mcrypt php-curl php-opcache php-cli php-pecl-zip
+if [ "$php_version" = "8.1" ]; then
+    yum-config-manager --enable remi-php81
+    yum -y install nginx php-fpm php-common php-gd php-mysqlnd php-pdo php-xml php-mbstring php-mcrypt php-curl php-opcache php-cli php-pecl-zip
+if [ "$php_version" = "8.0" ]; then
+    yum-config-manager --enable remi-php80
+    yum -y install nginx php-fpm php-common php-gd php-mysqlnd php-pdo php-xml php-mbstring php-mcrypt php-curl php-opcache php-cli php-pecl-zip
 if [ "$php_version" = "7.4" ]; then
     yum-config-manager --enable remi-php74
     yum -y install nginx php-fpm php-common php-gd php-mysqlnd php-pdo php-xml php-mbstring php-mcrypt php-curl php-opcache php-cli php-pecl-zip
