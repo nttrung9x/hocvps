@@ -60,7 +60,7 @@ curl -sO https://raw.githubusercontent.com/nttrung9x/hocvps/master/install && ba
 ```
 or
 
-php 5.6 - php 7.4
+php 5.6 - php 7.4 - centos-6 + centos-7
 
 ```bash
 curl -sO https://raw.githubusercontent.com/nguyentranchung/hocvps/master/install && bash install
