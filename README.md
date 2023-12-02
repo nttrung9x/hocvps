@@ -13,7 +13,7 @@ Không như những Control Panel khác, HocVPS Script không hề sử dụng b
 
 Ngoài ra, webserver sẽ được tự động tối ưu cấu hình để đảm bảo có hiệu suất hoạt động tốt nhất, bảo mật nhất. Ngay cả những bạn mới làm quen với VPS cũng có thể quản lý VPS thông qua menu dòng lệnh đơn giản, gọi bằng lệnh `hocvps`
 
-[![](https://hocvps.com/wp-content/uploads/2016/04/HocVPS-Script-v2.0.png)](https://hocvps.com/wp-content/uploads/2016/04/HocVPS-Script-v2.0.png)
+[![](hocvps-1.png)](hocvps-1.png)
 
 ## HocVPS Script sẽ tự động cài đặt:
 
@@ -37,7 +37,7 @@ Ngoài ra, webserver sẽ được tự động tối ưu cấu hình để đ�
 10.  Theo dõi tình trạng server ngay trên web, có thể sử dụng mobile truy cập mọi nơi.
 11.  [Thay đổi port SSH](https://hocvps.com/cac-buoc-thay-doi-ssh-port-cua-server/) mặc định từ 22 sang ngẫu nhiên hạn chế SSH Brute Force Attack, kèm theo [Fail2ban](https://hocvps.com/cai-dat-fail2ban-tren-centos/) block IP ngay nếu phát hiện login sai 3 lần (áp dụng cả SSH và HocVPS Script Admin).
 12.  Toàn bộ thông tin quản lý sẽ được lưu trong file text ở `/root/hocvps-script.txt`
-13.  Tham khảo thêm tính năng mới trong [Changelog](https://github.com/nguyentranchung/hocvps/blob/master/CHANGELOG.md).
+13.  Tham khảo thêm tính năng mới trong [Changelog](https://github.com/nttrung9x/hocvps/blob/master/CHANGELOG.md).
 
 ## Yêu cầu hệ thống:
 
@@ -75,7 +75,7 @@ _\*\*\*Học VPS có **[dịch vụ cài đặt VPS/Server](https://hocvps.com/d
 
 ## Chuẩn bị quá trình cài đặt
 
-[![](https://hocvps.com/wp-content/uploads/2016/04/Chuan-bi-cai-dat-HocVPS-Script-1.8.png)](https://hocvps.com/wp-content/uploads/2016/04/Chuan-bi-cai-dat-HocVPS-Script-1.8.png)
+[![](hocvps-2.png)](hocvps-2.png)
 
 Trong bước này bạn cần lựa chọn:
 
@@ -92,7 +92,7 @@ Sau đó, bạn cứ để cho script tự động thực hiện quá trình cà
 
 Cuối cùng, nếu không có vấn đề gì xảy ra, bạn sẽ nhận được thông báo cài đặt thành công và thông tin quản lý VPS như bên dưới. Đồng thời, thông tin này cũng sẽ được lưu trong file text có đường dẫn `/root/hocvps-script.txt` để bạn xem lại sau này.
 
-[![](https://hocvps.com/wp-content/uploads/2016/04/Cai-dat-thanh-cong-v1.8.png)](https://hocvps.com/wp-content/uploads/2016/04/Cai-dat-thanh-cong-v1.8.png)
+[![](hocvps-3.png)](hocvps-3.png)
 
 Vậy là server sẵn sàng để bạn sử dụng rồi đấy.
 
@@ -205,5 +205,5 @@ echo "Subject: test" | /usr/lib/sendmail -v admin@gmail.com
   
 Mặc định, HocVPS Script đã mở các port cần thiết: SSH(2222), HTTP/HTTPS(80/443), HocVPS Admin… Tuy vậy, một số nhà cung cấp VPS (Google Cloud, Amazon…) có thiết lập tường lửa riêng bên ngoài VPS và mặc định chỉ cho phép port SSH(22) và HTTP(80). Như vậy, bạn cần mở port thủ công tại trang quản lý của nhà cung cấp  
 Đối với Google Cloud, tạo **rule allow** trong **Network**–**default** như hình dưới để áp dụng mặc định cho toàn bộ VPS trong tài khoản.  
-[![](https://hocvps.com/wp-content/uploads/2017/05/GG-Add-Port.png)](https://hocvps.com/wp-content/uploads/2017/05/GG-Add-Port.png)  
+[![](hocvps-4.png)](hocvps-4.png)  
 Đối với EC2, bạn chỉnh ở mục `NETWORK&SECURITY - Security Groups - Inbound`. Tương tự, bạn cần mở thủ công port HTTPS(443), FTP… nếu cần.
