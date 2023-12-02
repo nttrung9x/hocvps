@@ -53,7 +53,7 @@ Trước khi tiến hành cài đặt, bạn cần nắm một số kiến th�
 Kết nối SSH sử dụng [ZOC Terminal](https://hocvps.com/huong-dan-dung-zoc-terminal-ket-noi-ssh/) hoặc [Putty](https://hocvps.com/huong-dan-dang-nhap-vps-su-dung-putty-windows/) với tài khoản `root`. Nếu tài khoản không có quyền root cần cấp quyền bằng cách chạy lệnh `sudo su`.  
 Chạy lệnh sau để tiến hành cài đặt:
 
-php 5.6 - php 8.2
+php 5.6 - php 8.2 - only centos-7
 
 ```bash
 curl -sO https://raw.githubusercontent.com/nttrung9x/hocvps/master/install && bash install
