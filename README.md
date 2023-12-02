@@ -54,6 +54,10 @@ Kết nối SSH sử dụng [ZOC Terminal](https://hocvps.com/huong-dan-dung-zoc
 Chạy lệnh sau để tiến hành cài đặt:
 
 ```bash
+curl -sO https://raw.githubusercontent.com/nttrung9x/hocvps/master/install && bash install
+```
+or
+```bash
 curl -sO https://raw.githubusercontent.com/nguyentranchung/hocvps/master/install && bash install
 ```
 
